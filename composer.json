@@ -1,0 +1,14 @@
+{
+  "name": "wbswbs/template",
+  "description": "A very simple Template Class",
+  "minimum-stability": "stable",
+  "license": "GPL-2.0-only",
+  "authors": [
+    {
+      "name": "Wolfgang Blessen",
+      "email": "software@blessen.de"
+    }
+  ],
+  "require": {
+  }
+}
