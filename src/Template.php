@@ -12,27 +12,24 @@
  *   N A M E S P A C E
  ******************************************************************************/
 
-namespace wbswbs\template;
-
-//use Exception;
-//use RuntimeException;
-
+namespace wbswbs;
 
 /**
  * @class template
  *
- * Die template Klasse bekommt bei der Initierung den Dateinamen des Templates dazu
+ * Die Template Klasse bekommt bei der Initierung den Dateinamen des Templates dazu
  * Mit setContent($content) werden die Variablen übergeben als key value
  * Der geparste Code kann mit getOutput() abgeholt werden.
  *
  *  Description:
  *
  * Calling the Template with the Filename in the Constructor:
+ *
  *    $tpl = new \de\blessen\wbsfw\template\template('path/to/filename.tpl'));
  *
- *    File Ending .tpl is not a must but recommandated
+ *    File Ending .tpl is not a must but common
  *
- *    Template-Placeholder are formated like {{wbs}<key>}
+ *    Template-Placeholder are formated like {{<key>}}
  *
  *   To replace Placeholder, use an array with key=>value
  *
@@ -42,7 +39,7 @@ namespace wbswbs\template;
  *
  * Beispielaufruf
  *
- *    $seite = new \de\blessen\wbsfw\template\template($wbs->loadTemplate('body_user_subject.tpl'));
+ *    $seite = new \wbswbs\Template(ROOT_PATH. 'templates/body_user_subject.tpl');
  *    $parameter['navigation']= 'jhgfhjgfjhgfjhfg';
  *    $parameter['wert1']        = 'Wert1';
  *    $seite->setContent($parameter);
